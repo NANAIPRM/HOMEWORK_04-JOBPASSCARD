@@ -1,144 +1,248 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     font-family: 'Oswald', sans-serif;
 }
-body{
+
+body {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.top{
+
+.top {
     display: flex;
     justify-content: space-between;
-       align-items: center;
-    padding:  0px 50px;
-    height: 5%;
-    border-top: 1px gray solid;
+    align-items: center;
+    margin: 0px 24px;
+    height: 5vh;
     border-bottom: 1px gray solid;
-    
+    font-size: 20px;
+    font-weight: bold;
+
     /* width: 90vw; */
 }
-.center{
+
+.center {
     display: flex;
     gap: 15px
 }
+
 .right {
     display: flex;
-    gap:15px;
+    gap: 15px;
 }
-.content{
-    /* background-color: #bbc6d6; */
-    width: 100vw;
+
+.content {
     height: 95%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     position: relative;
-    /* margin: 0px 16px; */
-}
-.lc{
-    /* background-color: yellow; */
-    width: 40%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:20px;
-}
-.rc{
-    /* background-color: #d3dff1; */
-    width: 40%;
-    height: 55%;
-    position: relative;
-    top: -25px;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: space-around;
-    border-radius: 10px;
-    box-shadow: rgb(116, 116, 116) 0px 0px 6px;
-    
-}
-.uc{
-    /* background-color: #d3dff1; */
-    width: 100%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 10px;
-    box-shadow: rgb(116, 116, 116) 0px 0px 6px;
-}
-.bc{
-    /* background-color: #d3dff1; */
-    width: 100%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 10px;
-    box-shadow: rgb(116, 116, 116) 0px 0px 6px;
-}
-.title{
-    position: absolute;
-    top : 150px;
-    left:100px;
+    margin: 5px;
+    margin-top: 24px;
 }
 
-.docs{
+.lc {
+    width: 47.5vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.rc {
+    width: 47.5vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 8px;
+    box-shadow: rgb(155, 154, 154) 0px 0px 20px;
+    position: relative;
+    /* top:50px; */
+    font-size: 20px;
+    padding: 16px;
+
+}
+
+.uc {
+    /* background-color: #d3dff1; */
+    width: 100%;
+    height: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 8px;
+    box-shadow: rgb(155, 154, 154) 0px 0px 20px;
+}
+
+.bc {
+    /* background-color: #d3dff1; */
+    width: 100%;
+    height: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 8px;
+    box-shadow: rgb(155, 154, 154) 0px 0px 20px;
+}
+
+
+.docs {
+    color: white;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 250px;
+    height: 250px;
+    background: #FEAC5E;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px silver solid;
+}
+
+.slides {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 20%;
     height: 60%;
-    background: rgb(178,195,34);
-background: radial-gradient(circle, rgba(178,195,34,1) 0%, rgba(253,79,45,1) 100%);
+    background: rgb(178, 195, 34);
+    background: radial-gradient(circle, rgba(178, 195, 34, 1) 0%, rgba(253, 79, 45, 1) 100%);
     padding: 8px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
-.slides{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 20%;
-    height: 60%;
-    background: rgb(178,195,34);
-background: radial-gradient(circle, rgba(178,195,34,1) 0%, rgba(253,79,45,1) 100%);
-    padding: 8px;
-    border-radius: 10px;
-}
-.subtotal{
+
+.subtotal {
     display: flex;
     justify-content: space-between;
 
 }
-.payment{
+
+.payment {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
 }
-.promo{
+
+.payment>p:nth-child(2) {
+    font-size: 40px;
+    color: #55f1b0;
+    ;
+}
+
+.promo {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
-#login{
+
+.promo>i {
+    font-size: 30px;
+    color: grey;
+}
+
+.promo>input {
+    color: grey;
+    border-radius: 8px;
+    border: 2px solid silver;
+    width: 70%;
+    font-weight: bold;
+    padding: 8px
+}
+
+#login {
     background-color: #55f1b0;
     border: none;
-    height: 5%;
     margin: 8px;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 8px;
+    font-weight: bold;
 }
-.rc > *{
+
+.rc>* {
     margin: 16px;
 }
-#apply{
+
+#apply {
     background-color: white;
     border: #55f1b0 2px solid;
-    width: 30%;
-    border-radius: 5px;
+    width: 20%;
+    border-radius: 8px;
     color: #55f1b0;
+}
+
+.mid {
+    height: 8vh;
+    display: flex;
+    margin-top: 24px;
+    align-items: flex-end;
+    padding: 24px;
+    padding-bottom: 0px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#checkicon {
+    color: #55f1b0;
+    font-size: 24px;
+    margin: 2px;
+}
+
+#bin {
+    border: 2px silver solid;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.price {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.pu {
+    font-size: 30px;
+    color: grey;
+    margin: 16px;
+}
+
+.pb {
+    font-size: 20px;
+    color: grey;
+    margin: 16px;
+}
+
+select {
+    border-radius: 8px;
+    border: 2px solid silver;
+    font-size: 16px;
+}
+
+.pu>i {
+    font-size: 16px;
 }
